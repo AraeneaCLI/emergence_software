@@ -30,9 +30,13 @@ export function Contact() {
   };
 
   const socialLinks = [
-    { name: "GitHub", url: "#", icon: "github" },
-    { name: "LinkedIn", url: "#", icon: "linkedin" },
-    { name: "Email", url: "mailto:yash.mankar10@rediffmail.com", icon: "mail" },
+    { name: "GitHub", url: "https://github.com/AraeneaCLI", icon: "github" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/yash-mankar-23b453269/",
+      icon: "linkedin",
+    },
+    { name: "Email", url: "mailto:yash.mankar520@gmail.com", icon: "mail" },
     { name: "Phone", url: "tel:+919324858237", icon: "phone" },
   ];
 
@@ -143,10 +147,10 @@ export function Contact() {
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Email</p>
                   <a
-                    href="mailto:yash.mankar10@rediffmail.com"
+                    href="mailto:yash.mankar520@gmail.com"
                     className="text-white font-semibold hover:text-gray-300 transition-colors"
                   >
-                    yash.mankar10@rediffmail.com
+                    yash.mankar520@gmail.com
                   </a>
                 </div>
                 <div>
