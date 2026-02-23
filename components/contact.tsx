@@ -134,7 +134,7 @@ export function Contact() {
           </div> */}
 
           {/* Contact info */}
-          <div className="flex flex-row justify-between space-y-12">
+          <div className="flex lg:flex-row md:flex-row flex-col justify-between space-y-12">
             <div>
               <p className="text-xs tracking-widest uppercase text-gray-500 mb-4">
                 Direct Contact

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import TextType from "./TextType";
+import { GridScan } from "./GridScan";
 
 export function Hero() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,18 +25,34 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(0deg,transparent_24%,rgba(255,255,255,.05)_25%,rgba(255,255,255,.05)_26%,transparent_27%,transparent_74%,rgba(255,255,255,.05)_75%,rgba(255,255,255,.05)_76%,transparent_77%,transparent)] bg-[size:50px_50px]" />
       </div>
 
-      {/* FOREGROUND CONTENT (z-10 ensures it stays above the bottles) */}
+      {/* Light Pillar Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <GridScan
+          sensitivity={0.55}
+          lineThickness={1}
+          linesColor="#392e4e"
+          gridScale={0.1}
+          scanColor="#FF9FFC"
+          scanOpacity={0.4}
+          enablePost
+          bloomIntensity={0.6}
+          chromaticAberration={0.002}
+          noiseIntensity={0.01}
+        />
+      </div>
+
+      {/* FOREGROUND CONTENT (z-10 ensures it stays above the background effects) */}
       <div className="relative z-10 text-center max-w-4xl mx-auto pointer-events-auto">
         <div className="space-y-6 mb-12">
           <div className="inline-block">
-            <span className="text-sm tracking-widest uppercase text-gray-400 font-light">
+            <span className="text-sm tracking-widest uppercase text-white-400 font-light">
               Full Stack Developer
             </span>
           </div>
 
           <h1 className="text-7xl md:text-8xl font-black tracking-tighter leading-[1.1]">
             <TextType
-              text={["Yash R. Mankar", "Software Engineer", "Forensic Analyst"]}
+              text={["Yash R. Mankar", "Software Analyst", "Forensic Analyst"]}
               typingSpeed={75}
               pauseDuration={1500}
               showCursor

@@ -1,6 +1,7 @@
 "use client";
 
 import Shuffle from "./Shuffle";
+import LightPillar from "./LightPillar";
 
 export function About() {
   return (
