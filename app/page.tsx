@@ -8,6 +8,7 @@ import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
 import { FeaturedWebsites } from "@/components/featured-websites";
 import Ribbons from "@/components/Ribbons";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Contact />
+        <ChatWidget />
       </div>
     </main>
   );
