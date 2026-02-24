@@ -17,9 +17,7 @@ export function About() {
           mouseInfluence={1}
           parallax={0.5}
           noise={0.1}
-          transparent
-          autoRotate={0}
-          color=""
+          transparent={true}
         />
       </div>
       <div className="relative z-10 w-screen p-4 mx-auto">

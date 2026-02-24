@@ -54,10 +54,6 @@ export function Contact() {
           direction="diagonal"
           borderColor="#fff"
           hoverFillColor="#222"
-          direction="diagonal"
-          borderColor="#271E37"
-          hoverColor="#222222"
-          size={40}
         />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto w-full">
