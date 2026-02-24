@@ -1,4 +1,5 @@
 "use client";
+import RippleGrid from "./RippleGrid";
 
 export function Experience() {
   const experiences = [
@@ -45,6 +46,19 @@ export function Experience() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-24 bg-black border-t border-gray-900">
+      {" "}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <RippleGrid
+          enableRainbow={false}
+          gridColor="#ffffff"
+          rippleIntensity={0.02}
+          gridSize={28}
+          gridThickness={15}
+          mouseInteraction={true}
+          mouseInteractionRadius={1.2}
+          opacity={0.8}
+        />
+      </div>
       <div className="relative z-10 w-screen p-4 mx-auto w-full">
         <div className="mb-16">
           <span className="text-xs tracking-widest uppercase text-gray-500 mb-4 block">

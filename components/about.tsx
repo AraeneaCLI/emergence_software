@@ -1,11 +1,27 @@
 "use client";
 
-import Shuffle from "./Shuffle";
-import LightPillar from "./LightPillar";
+import ColorBends from "./ColorBends";
 
 export function About() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-24 bg-black border-t border-gray-900">
+      {" "}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <ColorBends
+          colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+          rotation={64}
+          speed={0.2}
+          scale={0.2}
+          frequency={3.9}
+          warpStrength={1}
+          mouseInfluence={1}
+          parallax={0.5}
+          noise={0.1}
+          transparent
+          autoRotate={0}
+          color=""
+        />
+      </div>
       <div className="relative z-10 w-screen p-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left content */}

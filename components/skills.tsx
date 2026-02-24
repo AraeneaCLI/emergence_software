@@ -1,4 +1,5 @@
 "use client";
+import Orb from "./Orb";
 
 export function Skills() {
   const skillCategories = [
@@ -80,6 +81,16 @@ export function Skills() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-24 bg-black border-t border-gray-900">
+      {" "}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Orb
+          hoverIntensity={2}
+          rotateOnHover
+          hue={5}
+          forceHoverState={false}
+          backgroundColor="#000000"
+        />
+      </div>
       <div className="relative z-10 w-screen p-4 mx-auto w-full">
         <div className="mb-16">
           <span className="text-xs tracking-widest uppercase text-gray-500 mb-4 block">

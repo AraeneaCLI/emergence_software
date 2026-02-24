@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Squares from "./Squares";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -45,6 +46,20 @@ export function Contact() {
       id="contact"
       className="relative min-h-screen flex items-center justify-center px-6 py-24 bg-black border-t border-gray-900"
     >
+      {" "}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Squares
+          speed={0.5}
+          squareSize={40}
+          direction="diagonal"
+          borderColor="#fff"
+          hoverFillColor="#222"
+          direction="diagonal"
+          borderColor="#271E37"
+          hoverColor="#222222"
+          size={40}
+        />
+      </div>
       <div className="relative z-10 max-w-4xl mx-auto w-full">
         <div className="text-center mb-16">
           <span className="text-xs tracking-widest uppercase text-gray-500 mb-4 block">
